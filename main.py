@@ -122,7 +122,7 @@ def facial_processing():
 
                 if time.time()-mouth_start_time >= MOUTH_DROWSINESS_INTERVAL:
                     alarm_type=0
-                    cv2.putText(frame, "YOU ARE YAWNING...\nDO YOU NEED A BREAK?", (10, 40),
+                    cv2.putText(frame, "YOU ARE SLEEPY...\nDO YOU NEED A BREAK?", (10, 40),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
                     if not mixer.music.get_busy():
