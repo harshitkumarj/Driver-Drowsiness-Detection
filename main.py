@@ -143,7 +143,7 @@ def facial_processing():
 
             if time.time()- distracton_start_time> DISTRACTION_INTERVAL:
 
-                cv2.putText(frame, "EYES ON ROAD", (10, 20),
+                cv2.putText(frame, "EYES ON THE ROAD", (10, 20),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
                 if not eye_initialized and not mouth_initialized and not  mixer.music.get_busy():
